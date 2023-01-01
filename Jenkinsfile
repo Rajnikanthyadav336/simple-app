@@ -3,9 +3,9 @@ pipeline {
     tools {
         maven 'maven'
     }
-    stages {
-        stage('Buld') {
-            steps {
+    stages{
+        stage('Buld'){
+            steps{
                  sh script: 'mvn clean package'
             }
         }
